@@ -1,0 +1,120 @@
+.channel-page {
+  min-height: calc(100vh - var(--navbar-h));
+}
+
+.channel-banner {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
+}
+
+.channel-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.channel-avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+.channel-meta { flex: 1; }
+
+.channel-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.channel-stats {
+  font-size: 13px;
+  color: var(--text2);
+}
+
+.channel-upload-btn {
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: background 0.15s;
+}
+.channel-upload-btn:hover { background: var(--accent-hover); }
+
+.channel-content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.channel-section-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.channel-section-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.channel-loading {
+  color: var(--text3);
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+.channel-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 12px;
+  text-align: center;
+}
+.channel-empty-icon { font-size: 56px; }
+.channel-empty h3 { font-size: 20px; font-weight: 600; }
+
+.channel-upload-cta {
+  margin-top: 8px;
+  padding: 10px 24px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: background 0.15s;
+}
+.channel-upload-cta:hover { background: var(--accent-hover); }
+
+.channel-videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.channel-video-wrap {
+  position: relative;
+}
+
+.delete-video-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 80, 80, 0.1);
+  color: #ff5050;
+  border: 1px solid rgba(255, 80, 80, 0.3);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.delete-video-btn:hover { background: rgba(255, 80, 80, 0.2); }
